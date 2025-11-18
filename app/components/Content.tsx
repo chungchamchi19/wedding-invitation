@@ -205,7 +205,7 @@ const Content = () => {
           {/* Bride */}
           <section className="bg-white-black text-center" id="bride">
             <h2 className="font-esthetic py-4 m-0" style={{ fontSize: "2rem" }}>
-              Dear {upperFirstLetter(searchParams.get("name") as string)},
+              Dear {upperFirstLetter((searchParams.get("name") as string) || "my friend")},
             </h2>
             {/* <h2 className="font-esthetic py-4 m-0" style={{ fontSize: "2rem" }}>
               Assalamualaikum Warahmatullahi Wabarakatuh

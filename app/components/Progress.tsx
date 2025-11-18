@@ -30,7 +30,7 @@ const Progress = () => {
             <div className="progress-bar" id="progress-bar" style={{ width: "0%" }} />
           </div>
           <p className="d-none mt-1 text-theme-auto" id="progress-info">
-            Hi {upperFirstLetter(searchParams.get("name") || "")}...
+            Hi {upperFirstLetter(searchParams.get("name") || "my friend")}...
           </p>
         </div>
       </div>
