@@ -39,7 +39,7 @@ const Progress = () => {
           <small className="text-secondary">from</small>
           <small className="text-theme-auto">
             <i className="fa-brands fa-github me-1" />
-            dewanakl
+            chungchamchi19
           </small>
         </div>
       </div>
