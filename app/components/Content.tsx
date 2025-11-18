@@ -31,8 +31,8 @@ const Content = () => {
             <div className="position-relative overflow-hidden vw-100">
               <div className="position-absolute h-100 w-100 slide-desktop" style={{ opacity: 0 }}>
                 <img
-                  src="./assets/images/GAU03745.JPG"
-                  data-src="./assets/images/GAU03745.JPG"
+                  src="./assets/images/GAU03745.jpg"
+                  data-src="./assets/images/GAU03745.jpg"
                   alt="bg"
                   className="bg-cover-home"
                   style={{ maskImage: "none", opacity: "30%" }}
@@ -41,7 +41,7 @@ const Content = () => {
               <div className="position-absolute h-100 w-100 slide-desktop" style={{ opacity: 0 }}>
                 <img
                   src="./assets/images/placeholder.webp"
-                  data-src="./assets/images/GAU02070.JPG"
+                  data-src="./assets/images/GAU02070.jpg"
                   alt="bg"
                   className="bg-cover-home"
                   style={{ maskImage: "none", opacity: "30%" }}
@@ -49,8 +49,8 @@ const Content = () => {
               </div>
               <div className="position-absolute h-100 w-100 slide-desktop" style={{ opacity: 0 }}>
                 <img
-                  src="./assets/images/GAU03745.JPG"
-                  data-src="./assets/images/GAU02236.JPG"
+                  src="./assets/images/GAU03745.jpg"
+                  data-src="./assets/images/GAU02236.jpg"
                   alt="bg"
                   className="bg-cover-home"
                   style={{ maskImage: "none", opacity: "30%" }}
@@ -58,8 +58,8 @@ const Content = () => {
               </div>
               <div className="position-absolute h-100 w-100 slide-desktop" style={{ opacity: 0 }}>
                 <img
-                  src="./assets/images/GAU03745.JPG"
-                  data-src="./assets/images/GAU02976.JPG"
+                  src="./assets/images/GAU03745.jpg"
+                  data-src="./assets/images/GAU02976.jpg"
                   alt="bg"
                   className="bg-cover-home"
                   style={{ maskImage: "none", opacity: "30%" }}
@@ -67,8 +67,8 @@ const Content = () => {
               </div>
               <div className="position-absolute h-100 w-100 slide-desktop" style={{ opacity: 0 }}>
                 <img
-                  src="./assets/images/GAU03745.JPG"
-                  data-src="./assets/images/GAU03649.JPG"
+                  src="./assets/images/GAU03745.jpg"
+                  data-src="./assets/images/GAU03649.jpg"
                   alt="bg"
                   className="bg-cover-home"
                   style={{ maskImage: "none", opacity: "30%" }}
@@ -76,8 +76,8 @@ const Content = () => {
               </div>
               <div className="position-absolute h-100 w-100 slide-desktop" style={{ opacity: 0 }}>
                 <img
-                  src="./assets/images/GAU03745.JPG"
-                  data-src="./assets/images/GAU03899.JPG"
+                  src="./assets/images/GAU03745.jpg"
+                  data-src="./assets/images/GAU03899.jpg"
                   alt="bg"
                   className="bg-cover-home"
                   style={{ maskImage: "none", opacity: "30%", objectPosition: "0px 75%" }}
@@ -85,8 +85,8 @@ const Content = () => {
               </div>
               <div className="position-absolute h-100 w-100 slide-desktop" style={{ opacity: 0 }}>
                 <img
-                  src="./assets/images/GAU03745.JPG"
-                  data-src="./assets/images/GAU04059.JPG"
+                  src="./assets/images/GAU03745.jpg"
+                  data-src="./assets/images/GAU04059.jpg"
                   alt="bg"
                   className="bg-cover-home"
                   style={{ maskImage: "none", opacity: "50%", objectPosition: "0px 60%" }}
@@ -94,8 +94,8 @@ const Content = () => {
               </div>
               <div className="position-absolute h-100 w-100 slide-desktop" style={{ opacity: 0 }}>
                 <img
-                  src="./assets/images/GAU03745.JPG"
-                  data-src="./assets/images/GAU04072.JPG"
+                  src="./assets/images/GAU03745.jpg"
+                  data-src="./assets/images/GAU04072.jpg"
                   alt="bg"
                   className="bg-cover-home"
                   style={{ maskImage: "none", opacity: "50%", objectPosition: "0px 70%" }}
@@ -103,7 +103,7 @@ const Content = () => {
               </div>
               <div className="position-absolute h-100 w-100 slide-desktop" style={{ opacity: 0 }}>
                 <img
-                  src="./assets/images/GAU03745.JPG"
+                  src="./assets/images/GAU03745.jpg"
                   data-src="./assets/images/xe-dap-1.png"
                   alt="bg"
                   className="bg-cover-home"
@@ -112,8 +112,8 @@ const Content = () => {
               </div>
               <div className="position-absolute h-100 w-100 slide-desktop" style={{ opacity: 0 }}>
                 <img
-                  src="./assets/images/GAU03745.JPG"
-                  data-src="./assets/images/GAU04494.JPG"
+                  src="./assets/images/GAU03745.jpg"
+                  data-src="./assets/images/GAU04494.jpg"
                   alt="bg"
                   className="bg-cover-home"
                   style={{ maskImage: "none", opacity: "50%", objectPosition: "0px 70%" }}
@@ -121,8 +121,8 @@ const Content = () => {
               </div>
               <div className="position-absolute h-100 w-100 slide-desktop" style={{ opacity: 0 }}>
                 <img
-                  src="./assets/images/GAU03745.JPG"
-                  data-src="./assets/images/GAU04565.JPG"
+                  src="./assets/images/GAU03745.jpg"
+                  data-src="./assets/images/GAU04565.jpg"
                   alt="bg"
                   className="bg-cover-home"
                   style={{ maskImage: "none", opacity: "50%", objectPosition: "0px 90%" }}
@@ -621,7 +621,7 @@ const Content = () => {
                     <div className="carousel-item active">
                       <img
                         src="./assets/images/placeholder.webp"
-                        data-src="./assets/images/GAU03745.JPG"
+                        data-src="./assets/images/GAU03745.jpg"
                         alt="image 1"
                         className="d-block img-fluid cursor-pointer"
                         onClick={openImageModal}
@@ -630,7 +630,7 @@ const Content = () => {
                     <div className="carousel-item active">
                       <img
                         src="./assets/images/placeholder.webp"
-                        data-src="./assets/images/GAU02042-2.JPG"
+                        data-src="./assets/images/GAU02042-2.jpg"
                         alt="image 1"
                         className="d-block img-fluid cursor-pointer"
                         onClick={openImageModal}
@@ -639,7 +639,7 @@ const Content = () => {
                     <div className="carousel-item">
                       <img
                         src="./assets/images/placeholder.webp"
-                        data-src="./assets/images/GAU02070.JPG"
+                        data-src="./assets/images/GAU02070.jpg"
                         alt="image 2"
                         className="d-block img-fluid cursor-pointer"
                         onClick={openImageModal}
@@ -648,7 +648,7 @@ const Content = () => {
                     <div className="carousel-item">
                       <img
                         src="./assets/images/placeholder.webp"
-                        data-src="./assets/images/GAU02236.JPG"
+                        data-src="./assets/images/GAU02236.jpg"
                         alt="image 3"
                         className="d-block img-fluid cursor-pointer"
                         onClick={openImageModal}
@@ -657,7 +657,7 @@ const Content = () => {
                     <div className="carousel-item">
                       <img
                         src="./assets/images/placeholder.webp"
-                        data-src="./assets/images/GAU03649.JPG"
+                        data-src="./assets/images/GAU03649.jpg"
                         alt="image 3"
                         className="d-block img-fluid cursor-pointer"
                         onClick={openImageModal}
@@ -666,7 +666,7 @@ const Content = () => {
                     <div className="carousel-item">
                       <img
                         src="./assets/images/placeholder.webp"
-                        data-src="./assets/images/GAU03765.JPG"
+                        data-src="./assets/images/GAU03765.jpg"
                         alt="image 3"
                         className="d-block img-fluid cursor-pointer"
                         onClick={openImageModal}
@@ -743,7 +743,7 @@ const Content = () => {
                     <div className="carousel-item active">
                       <img
                         src="./assets/images/placeholder.webp"
-                        data-src="./assets/images/GAU03899.JPG"
+                        data-src="./assets/images/GAU03899.jpg"
                         alt="image 4"
                         className="d-block img-fluid cursor-pointer"
                         onClick={openImageModal}
@@ -752,7 +752,7 @@ const Content = () => {
                     <div className="carousel-item">
                       <img
                         src="./assets/images/placeholder.webp"
-                        data-src="./assets/images/GAU04059.JPG"
+                        data-src="./assets/images/GAU04059.jpg"
                         alt="image 5"
                         className="d-block img-fluid cursor-pointer"
                         onClick={openImageModal}
@@ -761,7 +761,7 @@ const Content = () => {
                     <div className="carousel-item">
                       <img
                         src="./assets/images/placeholder.webp"
-                        data-src="./assets/images/GAU04072.JPG"
+                        data-src="./assets/images/GAU04072.jpg"
                         alt="image 6"
                         className="d-block img-fluid cursor-pointer"
                         onClick={openImageModal}
@@ -770,7 +770,7 @@ const Content = () => {
                     <div className="carousel-item">
                       <img
                         src="./assets/images/placeholder.webp"
-                        data-src="./assets/images/GAU04565.JPG"
+                        data-src="./assets/images/GAU04565.jpg"
                         alt="image 6"
                         className="d-block img-fluid cursor-pointer"
                         onClick={openImageModal}
@@ -779,7 +779,7 @@ const Content = () => {
                     <div className="carousel-item">
                       <img
                         src="./assets/images/placeholder.webp"
-                        data-src="./assets/images/GAU03972.JPG"
+                        data-src="./assets/images/GAU03972.jpg"
                         alt="image 6"
                         className="d-block img-fluid cursor-pointer"
                         onClick={openImageModal}
@@ -788,7 +788,7 @@ const Content = () => {
                     <div className="carousel-item">
                       <img
                         src="./assets/images/placeholder.webp"
-                        data-src="./assets/images/GAU04123.JPG"
+                        data-src="./assets/images/GAU04123.jpg"
                         alt="image 6"
                         className="d-block img-fluid cursor-pointer"
                         onClick={openImageModal}
