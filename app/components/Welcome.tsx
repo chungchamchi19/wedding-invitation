@@ -1,4 +1,4 @@
-const Welcome = () => {
+const Welcome = ({ name }: { name?: string }) => {
   const openInvitation = (e: React.MouseEvent<HTMLButtonElement>) => {
     window.undangan.guest.open(e.target);
   };
@@ -17,7 +17,7 @@ const Welcome = () => {
             className="img-center-crop rounded-circle border border-3 border-light shadow mb-4 mx-auto object-top"
           />
           <h2 className="font-esthetic mb-4" style={{ fontSize: "2.25rem" }}>
-            Dinh Chung &amp; Pham Vui
+            Đinh Chung &amp; Phạm Vui
           </h2>
           <div id="guest-name" data-message="Dear Mr./Mrs./Friends" />
           <button type="button" className="btn btn-light shadow rounded-4 mt-3 mx-auto" onClick={openInvitation}>

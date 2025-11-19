@@ -1,10 +1,4 @@
-"use client";
-
-import { useSearchParams } from "next/navigation";
-
-const Progress = () => {
-  const searchParams = useSearchParams();
-
+const Progress = ({ name }: { name?: string }) => {
   const upperFirstLetter = (str: string) => {
     if (!str) return "";
     return str
@@ -24,14 +18,22 @@ const Progress = () => {
             fetchPriority="high"
             className="img-fluid mb-3 mx-auto object-fit-cover opacity-0"
             alt="icon"
-            style={{ width: "3.5rem", height: "3.5rem", borderRadius: "50%", objectPosition: "top" }}
+            style={{ width: "200px", height: "200px", borderRadius: "50%", objectPosition: "top" }}
           />
-          <div className="progress" role="progressbar" style={{ height: "0.5rem" }} aria-label="progress bar">
-            <div className="progress-bar" id="progress-bar" style={{ width: "0%" }} />
+          <div
+            className="relative w-full progress p-1 flex items-center !h-auto !rounded-[25px] !border-red-400 border !bg-transparent"
+            role="progressbar"
+            aria-label="progress bar"
+          >
+            <div
+              className="relative z-10 progress-bar !bg-red-400 rounded-[25px]"
+              id="progress-bar"
+              style={{ width: "0%", height: "1rem" }}
+            />
+            <div className="flex items-center mt-1 absolute right-2">❤️</div>
           </div>
-          <p className="d-none mt-4 text-theme-auto text-2xl" id="progress-info">
-            Dear {upperFirstLetter(searchParams.get("name") || "my friend")}. Hope you&rsquo;re ready for something
-            awesome!
+          <p className="z-0 d-none mt-4 text-theme-auto text-2xl" id="progress-info">
+            Dear {name || "my friend"}. Hope you&rsquo;re ready for something awesome!
           </p>
         </div>
       </div>

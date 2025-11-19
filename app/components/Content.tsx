@@ -1,19 +1,9 @@
 "use client";
 
-import { useSearchParams } from "next/navigation";
+import { useEffect } from "react";
+import { upperFirstLetter } from "../utils/string";
 
-const Content = () => {
-  const searchParams = useSearchParams();
-
-  const upperFirstLetter = (str: string) => {
-    if (!str) return "";
-    return str
-      .split(" ")
-      .filter((word) => word.length > 0)
-      .map((word) => word[0].toUpperCase() + word.slice(1))
-      .join(" ");
-  };
-
+const Content = ({ name = "my friend" }: { name: string }) => {
   const openImageModal = (e: React.MouseEvent<HTMLImageElement>) => {
     window.undangan.guest.modal(e.target);
   };
@@ -21,6 +11,15 @@ const Content = () => {
   const showStory = (e: React.MouseEvent<HTMLButtonElement>) => {
     window.undangan.guest.showStory(e.currentTarget.parentNode);
   };
+
+  useEffect(() => {
+    setTimeout(() => {
+      const nextBtns = document.querySelectorAll("button.carousel-control-next");
+      nextBtns?.forEach((btn) => {
+        (btn as HTMLButtonElement).click();
+      });
+    }, 1000);
+  }, []);
 
   return (
     <div className="row m-0 p-0" id="root">
@@ -132,7 +131,7 @@ const Content = () => {
           </div>
           <div className="text-center p-4 bg-overlay-auto rounded-5">
             <h2 className="font-esthetic mb-4" style={{ fontSize: "2rem" }}>
-              Dinh Chung &amp; Pham Vui
+              Đinh Chung &amp; Phạm Vui
             </h2>
             <p className="m-0" style={{ fontSize: "1rem" }}>
               Sunday, November 30th 2025
@@ -170,7 +169,7 @@ const Content = () => {
                 className="img-center-crop rounded-circle border border-3 border-light shadow my-4 mx-auto cursor-pointer object-top"
               />
               <h2 className="font-esthetic my-4" style={{ fontSize: "2.25rem" }}>
-                Dinh Chung &amp; Pham Vui
+                Đinh Chung &amp; Phạm Vui
               </h2>
               <p className="my-2" style={{ fontSize: "1.25rem" }}>
                 Sunday, November 30th 2025
@@ -204,8 +203,9 @@ const Content = () => {
           </div>
           {/* Bride */}
           <section className="bg-white-black text-center" id="bride">
-            <h2 className="font-esthetic py-4 m-0" style={{ fontSize: "2rem" }}>
-              Dear {upperFirstLetter((searchParams.get("name") as string) || "my friend")},
+            <h2 className="font-esthetic py-4 m-0 flex gap-2.5 justify-center" style={{ fontSize: "2rem" }}>
+              <span>Dear</span>
+              {upperFirstLetter(name)},
             </h2>
             {/* <h2 className="font-esthetic py-4 m-0" style={{ fontSize: "2rem" }}>
               Assalamualaikum Warahmatullahi Wabarakatuh
@@ -241,7 +241,7 @@ const Content = () => {
                     className="img-center-crop rounded-circle border border-3 border-light shadow my-4 mx-auto cursor-pointer"
                   />
                   <h2 className="font-esthetic m-0" style={{ fontSize: "2.125rem" }}>
-                    Dinh Chung
+                    Đinh Chung
                   </h2>
                   <p className="mt-3 mb-1" style={{ fontSize: "1.25rem" }}>
                     Groom
@@ -285,7 +285,7 @@ const Content = () => {
                 <div data-aos="fade-left" data-aos-duration={2000} className="pb-1">
                   <img
                     src="./assets/images/placeholder.webp"
-                    data-src="./assets/images/bride.png"
+                    data-src="./assets/images/bride-4.png"
                     alt="cewe"
                     onClick={openImageModal}
                     className="img-center-crop rounded-circle border border-3 border-light shadow my-4 mx-auto cursor-pointer"
@@ -294,7 +294,7 @@ const Content = () => {
                     }}
                   />
                   <h2 className="font-esthetic m-0" style={{ fontSize: "2.125rem" }}>
-                    Pham Vui
+                    Phạm Vui
                   </h2>
                   <p className="mt-3 mb-1" style={{ fontSize: "1.25rem" }}>
                     Bride
@@ -841,12 +841,6 @@ const Content = () => {
                     <i className="fa-brands fa-github me-1" />
                     <a target="_blank" href="https://github.com/chungchamchi19/wedding-invitation.git">
                       github
-                    </a>
-                  </small>
-                  <small>
-                    <i className="fa-solid fa-music me-1" />
-                    <a target="_blank" href="https://pixabay.com/music/modern-classical-pure-love-304010">
-                      music
                     </a>
                   </small>
                 </div>

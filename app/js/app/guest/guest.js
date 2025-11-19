@@ -308,17 +308,24 @@ export const guest = (() => {
       document.getElementById("information")?.remove();
     }
 
-    // wait until welcome screen is show.
-    await util.changeOpacity(document.getElementById("welcome"), true);
+    console.log(Date.now() - window.startTime);
 
-    // remove loading screen and show welcome screen.
-    await util.changeOpacity(document.getElementById("loading"), false).then((el) => el.remove());
+    const clearLoadingId = setInterval(async () => {
+      if (Date.now() - window.startTime > 3_000) {
+        clearTimeout(clearLoadingId);
+        // wait until welcome screen is show.
+        await util.changeOpacity(document.getElementById("welcome"), true);
+        // remove loading screen and show welcome screen.
+        await util.changeOpacity(document.getElementById("loading"), false).then((el) => el.remove());
+      }
+    }, 10);
   };
 
   /**
    * @returns {void}
    */
   const pageLoaded = () => {
+    window.startTime = Date.now();
     lang.init();
     offline.init();
     progress.init();

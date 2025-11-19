@@ -9,7 +9,7 @@ import Progress from "./components/Progress";
 import ControlButtons from "./components/ControlButtons";
 import { Suspense } from "react";
 
-export default function Home() {
+export default function Home({ name }: { name: string }) {
   useEffect(() => {
     ((w) => {
       w.undangan = guest.init();
@@ -18,9 +18,9 @@ export default function Home() {
 
   return (
     <Suspense fallback={<div>Loading...</div>}>
-      <Progress></Progress>
-      <Welcome></Welcome>
-      <Content></Content>
+      <Progress name={name}></Progress>
+      <Welcome name={name}></Welcome>
+      <Content name={name}></Content>
       <ImageModal></ImageModal>
       <ControlButtons></ControlButtons>
     </Suspense>
