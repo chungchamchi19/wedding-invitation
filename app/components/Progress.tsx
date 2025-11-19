@@ -29,8 +29,9 @@ const Progress = () => {
           <div className="progress" role="progressbar" style={{ height: "0.5rem" }} aria-label="progress bar">
             <div className="progress-bar" id="progress-bar" style={{ width: "0%" }} />
           </div>
-          <p className="d-none mt-1 text-theme-auto" id="progress-info">
-            Hi {upperFirstLetter(searchParams.get("name") || "my friend")}...
+          <p className="d-none mt-4 text-theme-auto text-2xl" id="progress-info">
+            Dear {upperFirstLetter(searchParams.get("name") || "my friend")}. Hope you&rsquo;re ready for something
+            awesome!
           </p>
         </div>
       </div>
