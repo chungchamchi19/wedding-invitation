@@ -7,7 +7,11 @@ const Page = () => {
 
   const getLink = async () => {
     const host = window.location.host;
-    const link = `${host}/${encodeURIComponent(val)}`;
+    let link = `${host}/${encodeURIComponent(val)}`;
+
+    if (!link.includes("http")) {
+      link = "https://" + link;
+    }
 
     try {
       await navigator.clipboard.writeText(link);
