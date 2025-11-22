@@ -622,36 +622,6 @@ const Content = ({ name = "my friend" }: { name: string }) => {
                       data-bs-slide-to={6}
                       aria-label="Slide 3"
                     />
-                    <button
-                      type="button"
-                      data-bs-target="#carousel-image-one"
-                      data-bs-slide-to={7}
-                      aria-label="Slide 3"
-                    />
-                    <button
-                      type="button"
-                      data-bs-target="#carousel-image-one"
-                      data-bs-slide-to={8}
-                      aria-label="Slide 3"
-                    />
-                    <button
-                      type="button"
-                      data-bs-target="#carousel-image-one"
-                      data-bs-slide-to={9}
-                      aria-label="Slide 3"
-                    />
-                    <button
-                      type="button"
-                      data-bs-target="#carousel-image-one"
-                      data-bs-slide-to={10}
-                      aria-label="Slide 3"
-                    />
-                    <button
-                      type="button"
-                      data-bs-target="#carousel-image-one"
-                      data-bs-slide-to={11}
-                      aria-label="Slide 3"
-                    />
                   </div>
                   <div className="carousel-inner rounded-4">
                     <div className="carousel-item active">
@@ -694,51 +664,6 @@ const Content = ({ name = "my friend" }: { name: string }) => {
                       <img
                         src="./assets/images/placeholder.webp"
                         data-src="./assets/images/GAU03649.jpg"
-                        alt="image 3"
-                        className="d-block img-fluid cursor-pointer"
-                        onClick={openImageModal}
-                      />
-                    </div>
-                    <div className="carousel-item">
-                      <img
-                        src="./assets/images/placeholder.webp"
-                        data-src="./assets/images/GAU03030.jpg"
-                        alt="image 3"
-                        className="d-block img-fluid cursor-pointer"
-                        onClick={openImageModal}
-                      />
-                    </div>
-                    <div className="carousel-item">
-                      <img
-                        src="./assets/images/placeholder.webp"
-                        data-src="./assets/images/GAU02045.jpg"
-                        alt="image 3"
-                        className="d-block img-fluid cursor-pointer"
-                        onClick={openImageModal}
-                      />
-                    </div>
-                    <div className="carousel-item">
-                      <img
-                        src="./assets/images/placeholder.webp"
-                        data-src="./assets/images/GAU02123.jpg"
-                        alt="image 3"
-                        className="d-block img-fluid cursor-pointer"
-                        onClick={openImageModal}
-                      />
-                    </div>
-                    <div className="carousel-item">
-                      <img
-                        src="./assets/images/placeholder.webp"
-                        data-src="./assets/images/GAU02407.jpg"
-                        alt="image 3"
-                        className="d-block img-fluid cursor-pointer"
-                        onClick={openImageModal}
-                      />
-                    </div>
-                    <div className="carousel-item">
-                      <img
-                        src="./assets/images/placeholder.webp"
-                        data-src="./assets/images/GAU02481.jpg"
                         alt="image 3"
                         className="d-block img-fluid cursor-pointer"
                         onClick={openImageModal}
